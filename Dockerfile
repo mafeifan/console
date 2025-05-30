@@ -1,4 +1,4 @@
-FROM amd64/node:14-alpine3.14
+FROM amd64/node:20-alpine3.21
 RUN adduser -D -g kubesphere -u 1002 kubesphere && \
     mkdir -p /opt/kubesphere/console && \
     chown -R kubesphere:kubesphere /opt/kubesphere/console
